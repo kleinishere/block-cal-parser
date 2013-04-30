@@ -1,3 +1,6 @@
+*.ics
+output.txt
+
 *.py[cod]
 
 # C extensions

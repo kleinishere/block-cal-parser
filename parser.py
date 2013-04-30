@@ -1,14 +1,17 @@
-from sys import argv
+from icalendar import Calendar
 
-script_version = 0.1
+def process_file(file):
+    "Processes the iCal file looking for lecture names."
 
-# Formatting
-prompt = '> '
-line_break = '-=-' * 4
+    calendar = Calendar.from_ical(open(file, 'rb').read())
 
-# Script arguments
-script, calendar_file = argv
+    lecture_names = []
+    
+    for component in calendar.walk():
+        if component.name == "VEVENT" and \
+        component.get('LOCATION') == 'CHS 73-105':
+            lecture_name = str(component.get('summary'))
+            lecturer_placeholder = lecture_name.find(' (')
+            lecture_names.append(lecture_name[0:lecturer_placeholder])
 
-print line_break
-print "Welcome to %s v%s" % (script, str(script_version))
-print line_break
+    return lecture_names
