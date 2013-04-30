@@ -14,6 +14,6 @@ Run with:
 
 ## ToDos
 
-*Add week counting, followed by lecture number counting. "L1-First Lecture Name"
-*Add lecture name grabbing and option to include lecturer name in output.
-*Refine module structure to be more direct in its use and returns.
+* Add week counting, followed by lecture number counting. "L1-First Lecture Name"
+* Add lecture name grabbing and option to include lecturer name in output.
+* Refine module structure to be more direct in its use and returns.
