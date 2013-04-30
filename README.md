@@ -1,5 +1,7 @@
 # Block Calendar Parser
 
+![Imgur](http://i.imgur.com/ZyC5BUI.png "Block 5")
+
 Given the block ICS folder (acquired from ANGEL), this script generates a text list of lecture names comprising the block at UCLA DGSOM.
 
 ## Assumptions
