@@ -2,11 +2,11 @@
 
 ![Imgur](http://i.imgur.com/ZyC5BUI.png "Block 5")
 
-Given the block ICS folder (acquired from ANGEL), this script generates a text list of lecture names comprising the block at UCLA DGSOM.
+Given the block ICS file (acquired from ANGEL), this script generates a text list of lecture names comprising the block at UCLA DGSOM.
 
 ## Assumptions
 
-Only includes calendar events with location of 'CHS XX-105'.
+Only includes calendar events with location of 'CHS 73-105'.
 
 ## Instructions
 
